@@ -1,0 +1,116 @@
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Logger ready
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: kalliope args: Namespace(action='start', brain_file=None, deaf=False, debug=True, git_url=None, neuron_name=None, run_order=None, run_synapse=None, signal_name=None, stt_name=None, trigger_name=None, tts_name=None)
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Try to load file from 1: /home/jason/kalliope_starter_en/settings.yml
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: File found in /home/jason/kalliope_starter_en/settings.yml
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: File path to load: /home/jason/kalliope_starter_en/settings.yml 
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Current processor type: x86_64
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: File path to load: /home/jason/kalliope_starter_en/settings.yml 
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Default STT: google
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Default TTS: pico2wave
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Default Trigger name: snowboy
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Default Player name: mplayer
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Resource directory synapse: {'neuron': 'resources/neurons', 'stt': 'resources/stt', 'tts': 'resources/tts', 'signal': 'resources/signal'}
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [SettingLoader] Neuron resource folder path loaded: resources/neurons
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [SettingLoader] STT resource folder path loaded: resources/stt
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [SettingLoader] TTS resource folder path loaded: resources/tts
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [SettingLoader] Signal resource folder path loaded: resources/signal
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Try to load file from 1: /home/jason/kalliope_starter_en/global_variables/variables.yml
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: File found in /home/jason/kalliope_starter_en/global_variables/variables.yml
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: File path to load: /home/jason/kalliope_starter_en/global_variables/variables.yml 
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [SettingsLoader] Options: {'name': 'Options', 'energy_threshold': 4000, 'adjust_for_ambient_noise_second': 0, 'deaf': False, 'mute': False, 'stt_timeout': 0}
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [SettingsLoader] send_anonymous_usage_stats: e13d3cbc737c4a818b8895eb5c22975d
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Try to load file from 1: /home/jason/kalliope_starter_en/brain.yml
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: File found in /home/jason/kalliope_starter_en/brain.yml
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: File path to load: /home/jason/kalliope_starter_en/brain.yml 
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: File path to load: /home/jason/kalliope_starter_en/brain.yml 
+Starting REST API Listening port: 5000
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Starting REST API Listening port: 5000
+Starting Kalliope
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Starting Kalliope
+Press Ctrl+C for stopping
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Press Ctrl+C for stopping
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [Kalliope entrypoint] List of signal class to load: {'order'}
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [Utils]-> get_dynamic_class_instantiation : package path : kalliope.signals.order.order
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [NotificationManager] Add new instance to the manager
+Starting order signal
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Starting order signal
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: PlayerLauncher: Start player mplayer with parameters: {}
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [Utils]-> get_dynamic_class_instantiation : package path : kalliope.players.mplayer.mplayer
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.7/dist-packages/kalliope/core/RestAPI/FlaskAPI.py", line 81, in run
+    http_server.serve_forever()
+  File "/usr/local/lib/python3.7/dist-packages/gevent/baseserver.py", line 367, in serve_forever
+    self.start()
+  File "/usr/local/lib/python3.7/dist-packages/gevent/baseserver.py", line 305, in start
+    self.init_socket()
+  File "/usr/local/lib/python3.7/dist-packages/gevent/pywsgi.py", line 1490, in init_socket
+    StreamServer.init_socket(self)
+  File "/usr/local/lib/python3.7/dist-packages/gevent/server.py", line 146, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+  File "/usr/local/lib/python3.7/dist-packages/gevent/server.py", line 157, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "/usr/local/lib/python3.7/dist-packages/gevent/server.py", line 256, in _tcp_listener
+    sock.bind(address)
+OSError: [Errno 98] Address already in use: ('', 5000)
+
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [Mplayer.__init__] instance
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [Mplayer.__init__] args : {} 
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [HookManager] calling synapses in hook name: on_start
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [HookManager] hook: on_start , type: <class 'str'>
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [SynapseLauncher] start_synapse_by_list_name called with synapse list: ['on-start-synapse'] 
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [LIFOBuffer] LIFO buffer created
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [LIFOBuffer] Add a new synapse list to process to the LIFO
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [LIFOBuffer] number of synapse list to process: 1
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [LIFOBuffer] number of neuron to process: 1
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [LIFOBuffer] process_neuron_list: is_api_call: True
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [NeuronLauncher] replacing brackets from {'message': ["I'm ready", 'talk to me'], 'is_api_call': True}, using {}
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [NeuronLauncher] replacing brackets from ["I'm ready", 'talk to me'], using {}
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [NeuronLauncher] replacing brackets from I'm ready, using {}
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [NeuronLauncher] replacing brackets from talk to me, using {}
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [NeuronLauncher] replacing brackets from True, using {}
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Run neuron: "{'name': 'say', 'parameters': {'message': ["I'm ready", 'talk to me'], 'is_api_call': True}}"
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [Utils]-> get_dynamic_class_instantiation : package path : kalliope.neurons.say.say
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [NeuronModule] TTS args: {'name': 'pico2wave', 'parameters': {'language': 'en-US', 'cache': True}}
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [NeuronModule] Say() called with message: ["I'm ready", 'talk to me']
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [NeuronModule] message is list
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [NeuronModule] tts_message to say: talk to me
+talk to me
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: talk to me
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [Cortex] key saved in memory. key: kalliope_last_tts_message, value: talk to me
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [NeuronModule] mute is False, make Kalliope speaking
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [HookManager] calling synapses in hook name: on_start_speaking
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [HookManager] hook: on_start_speaking , type: <class 'NoneType'>
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [SynapseLauncher] start_synapse_by_list_name called with synapse list: None 
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [Utils]-> get_dynamic_class_instantiation : package path : kalliope.tts.pico2wave.pico2wave
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: PlayerLauncher: Start player mplayer with parameters: {}
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [Utils]-> get_dynamic_class_instantiation : package path : kalliope.players.mplayer.mplayer
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [Mplayer.__init__] instance
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: [Mplayer.__init__] args : {} 
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Class TTSModule called from module Pico2wave, cache: True, language: en-US, voice: default
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: get_path_to_store_audio return: /tmp/kalliope_tts_cache/Pico2wave/en-US/default/1a60f990f5be4e52771e1673a64eb235.tts
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: TTSModule, File already in cache: /tmp/kalliope_tts_cache/Pico2wave/en-US/default/1a60f990f5be4e52771e1673a64eb235.tts
+2020-03-22 17:07:01 :: kalliope-0.6.1 :: Mplayer cmd: ['/usr/bin/mplayer', '-slave', '-quiet', '/tmp/kalliope_tts_cache/Pico2wave/en-US/default/1a60f990f5be4e52771e1673a64eb235.tts']
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: [HookManager] calling synapses in hook name: on_stop_speaking
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: [HookManager] hook: on_stop_speaking , type: <class 'NoneType'>
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: [SynapseLauncher] start_synapse_by_list_name called with synapse list: None 
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: [LIFOBuffer] complete mode
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: [Cortex] Clean temp memory
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: [Order] Entering state: starting_trigger
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: [HookManager] calling synapses in hook name: on_waiting_for_trigger
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: [HookManager] hook: on_waiting_for_trigger , type: <class 'NoneType'>
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: [SynapseLauncher] start_synapse_by_list_name called with synapse list: None 
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: TriggerLauncher: Start trigger snowboy with parameters: {'pmdl_file': 'trigger/Izzy.pmdl', 'callback': <bound method Order.trigger_callback of <Order(<class 'kalliope.signals.order.order.Order'>, started daemon 140319532775168)>>}
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: [Utils]-> get_dynamic_class_instantiation : package path : kalliope.trigger.snowboy.snowboy
+/usr/local/lib/python3.7/dist-packages/cffi/cparser.py:164: UserWarning: Global variable 'stderr' in cdef(): for consistency with C it should have a storage class specifier (usually 'extern')
+  "(usually 'extern')" % (decl.name,))
+/usr/local/lib/python3.7/dist-packages/cffi/cparser.py:164: UserWarning: Global variable '__stderrp' in cdef(): for consistency with C it should have a storage class specifier (usually 'extern')
+  "(usually 'extern')" % (decl.name,))
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: Try to load file from 1: /home/jason/kalliope_starter_en/trigger/Izzy.pmdl
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: File found in /home/jason/kalliope_starter_en/trigger/Izzy.pmdl
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: [Order] Entering state: waiting_for_trigger_callback
+Waiting for trigger detection
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: detecting...
+2020-03-22 17:07:02 :: kalliope-0.6.1 :: Waiting for trigger detection
